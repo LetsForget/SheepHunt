@@ -44,9 +44,10 @@ namespace Sheeps.Spawn
         {
             foreach (SheepSpawn sheepSpawn in _sheepSpawns)
             {
+                sheepSpawn.SheepSpeed = 0;
+
                 if (!sheepSpawn.Catched)
                 {
-                    sheepSpawn.SheepSpeed = 0;
                     sheepSpawn.LaunchDissolving(1);
                 }
             }
